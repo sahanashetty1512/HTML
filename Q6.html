@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Invoice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      font-size: 14px;
+    }
+
+    .invoice-box {
+      width: 100%;
+      
+    }
+
+    .logo {
+      font-size: 32px;
+      color: #f00;
+      font-weight: bold;
+    }
+
+    .company-details {
+      float: left;
+      text-align: left;
+    }
+
+    .job-invoice-title {
+      float: right;
+      margin-top: 50px;
+      font-size: 28px;
+      color: lightgray;
+      font-weight: bold;
+    }
+    .date{
+        float:right;
+        text-align: right;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .no-border {
+      border: none;
+    }
+
+    .striped tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .totals td {
+      border: none;
+      text-align: right;
+      padding: 4px 8px;
+    }
+
+    .thankyou {
+      background-color: #ddd;
+      text-align: center;
+      font-style: italic;
+      padding: 8px;
+      margin-top: 30px;
+    }
+
+    .sub-head th {
+      background-color: #d9e8f5;
+    }
+
+    .bill-to {
+      font-style: italic;
+      line-height: 1.6;
+      text-align: right;
+      float: left;
+    }
+  
+  
+  </style>
+</head>
+<body>
+
+  <div class="invoice-box">
+    <div>
+      <span class="logo">Logo</span>
+      <div class="company-details">
+        <strong>Company name</strong><br>
+        address<br>
+        city, state ZIP<br>
+        Phone, fax<br>
+        email, web site, company#
+      </div>
+    </div>
+
+    <div class="job-invoice-title">job invoice</div>
+    <div class="clear">
+    </div>
+    <br>
+    <div class="date">
+       
+    <strong>DATE:</strong><br><br>
+        <strong>INVOICE #:</strong>
+    </div>
+<hr>  
+            <div class="bill-to">
+          <strong >BILL TO: (#)</strong><br>
+          Name<br>
+          Address<br>
+          City, ST ZIP<br>
+          Country<br>
+           Phone
+          </div>
+    <table>
+      <tr class="sub-head">
+        <th>Start date</th>
+        <th>Finish date</th>
+        <th>Job address</th>
+        <th>Client name</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+    <table class="striped">
+      <thead class="sub-head">
+        <tr>
+          <th>Item ID</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Line Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Add as many rows as needed -->
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <table style="width: 30%; float: right; margin-top: 10px;">
+      <tr><td class="totals">SUBTOTAL</td><td class="totals">-</td></tr>
+      <tr><td class="totals">EXTRAS</td><td class="totals">-</td></tr>
+      <tr><td class="totals"><strong>TOTAL</strong></td><td class="totals">-</td></tr>
+      <tr><td class="totals">PAID</td><td class="totals">-</td></tr>
+      <tr><td class="totals"><strong>TOTAL DUE</strong></td><td class="totals">-</td></tr>
+    </table>
+
+    <div class="clear"></div>
+
+    <div class="thankyou">THANK YOU FOR YOUR BUSINESS!</div>
+  </div>
+
+</body>
+</html>

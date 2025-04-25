@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Employee Details Form</title>
+</head>
+<body>
+    <h2>New Employee Details Form</h2>
+    <form>
+        <fieldset>
+            <legend><strong>Personal Details</strong></legend>
+            <label>Your Name:</label>
+            <select>
+                <option>Mr</option>
+                <option>Mrs</option>
+                <option>Ms</option>
+            </select>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Surname" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+
+            <label>Birth Date:</label>
+            <input type="date" required><br><br>
+
+            <label>Address:</label><br>
+            <input type="text" placeholder="Street Address" required><br>
+            <input type="text" placeholder="Street Address Line 2"><br>
+            <input type="text" placeholder="Suburb">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Postcode"><br><br>
+
+            <label>Contact:</label><br>
+            <input type="tel" placeholder="Home Phone">
+            <input type="tel" placeholder="Mobile Phone">
+            <input type="email" placeholder="Email Address"><br><br>
+
+            <label>Are you an Australian?</label>
+            <input type="radio" name="australian" value="yes"> Yes
+            <input type="radio" name="australian" value="no"> No<br>
+
+            <label>Do you have a working visa?</label>
+            <input type="radio" name="visa" value="yes"> Yes
+            <input type="radio" name="visa" value="no"> No
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Employment Details</strong></legend>
+            <label>Job Title:</label>
+            <input type="text"><br><br>
+
+            <label>Commencement Date:</label>
+            <input type="date"><br><br>
+
+            <label>File Tax Number:</label>
+            <input type="text"><br><br>
+
+            <label>Employment Status:</label><br>
+            <input type="radio" name="status" value="fulltime"> Full Time
+            <input type="radio" name="status" value="parttime"> Part Time
+            <input type="radio" name="status" value="temporary"> Temporary
+            <input type="radio" name="status" value="casual"> Casual
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Emergency Contact Details</strong></legend>
+            <label>Name:</label>
+            <select>
+                <option>Mr</option>
+                <option>Mrs</option>
+                <option>Ms</option>
+            </select>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Surname" required><br><br>
+
+            <label>Relationship:</label>
+            <input type="text"><br><br>
+
+            <label>Contact:</label><br>
+            <input type="tel" placeholder="Home Phone">
+            <input type="tel" placeholder="Mobile Phone">
+            <input type="email" placeholder="Email Address">
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Banking Details</strong></legend>
+            <label>Bank:</label>
+            <input type="text" placeholder="Bank Name">
+            <input type="text" placeholder="Bank Branch"><br><br>
+
+            <label>Account:</label>
+            <input type="text" placeholder="Account Name">
+            <input type="text" placeholder="Account Number">
+            <input type="text" placeholder="BSB Number"><br><br>
+
+            <label>Employee Signature:</label><br>
+            <input type="text" placeholder="Print your name here"><br>
+            <input type="date" placeholder="Enter date here">
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+        <p><small>* Mandatory fields</small></p>
+    </form>
+</body>
+</html>
